@@ -1,0 +1,18 @@
+#spring.application.name=spring-cloud-config-server-d605
+#server.port=8888
+#spring.cloud.config.server.git.uri=file://D:/GitRepo/app-config-files
+#spring.cloud.config.server.git.search-paths={application}
+
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-cloud-config-server-d605
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://D:/GitRepo/app-config-files
+          search-paths:
+          - '{application}'
+          - 'common'
